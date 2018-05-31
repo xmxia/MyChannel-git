@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="77"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的频道" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSg-Zb-ubS">
+                    <rect key="frame" x="16" y="25" width="73.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="点击进入频道" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc8-GY-brE">
+                    <rect key="frame" x="95" y="27" width="210" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSQ-tT-rKz">
+                    <rect key="frame" x="301" y="18" width="55" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="si8-Xq-yub"/>
+                    </constraints>
+                    <state key="normal" title="编辑"/>
+                    <state key="selected" title="完成"/>
+                    <connections>
+                        <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="jsp-AX-Ges"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cc8-GY-brE" firstAttribute="leading" secondItem="nSg-Zb-ubS" secondAttribute="trailing" constant="5" id="ZVw-NV-g19"/>
+                <constraint firstItem="nSg-Zb-ubS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="asL-97-3rf"/>
+                <constraint firstItem="cc8-GY-brE" firstAttribute="centerY" secondItem="nSg-Zb-ubS" secondAttribute="centerY" id="cKu-tc-d5U"/>
+                <constraint firstItem="nSg-Zb-ubS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="fXu-UK-kz6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SSQ-tT-rKz" secondAttribute="trailing" constant="20" id="ft5-hO-7rF"/>
+                <constraint firstItem="SSQ-tT-rKz" firstAttribute="centerY" secondItem="nSg-Zb-ubS" secondAttribute="centerY" id="kQ1-KX-3Bm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="channelLabel" destination="nSg-Zb-ubS" id="frk-ld-48P"/>
+                <outlet property="detailLabel" destination="cc8-GY-brE" id="CpH-a5-B9t"/>
+                <outlet property="editBtn" destination="SSQ-tT-rKz" id="bqZ-3I-YGT"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="20.5"/>
+        </view>
+    </objects>
+</document>
