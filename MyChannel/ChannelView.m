@@ -119,8 +119,8 @@ static CGFloat labelHeight = 40;
     _header2.frame = _header2.bounds;
     [self addSubview:_header2];
     
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(10, 5, 30, 30)];
-    [btn setImage:[UIImage imageNamed:@"close_sdk_login_14x14_@2x"] forState:UIControlStateNormal];
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(10, 5, 20, 20)];
+    [btn setBackgroundImage:[UIImage imageNamed:@"close_sdk_login_14x14_@2x"] forState:UIControlStateNormal];
     [self addSubview:btn];
     @weakify(self)
     [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
