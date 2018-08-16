@@ -1,2 +1,2 @@
 # MyChannel
-wq：
+hello world
